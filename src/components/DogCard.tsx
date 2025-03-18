@@ -81,11 +81,11 @@ export default function DogCard({
                 : 0,
           }}
           transition={{ type: "tween", duration: 0.3 }}
-          className="bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col"
+          className="bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col p-5"
           {...swipeHandlers}
         >
           {/* 狗狗圖片 */}
-          <div className="aspect-square w-full relative overflow-hidden bg-slate-100">
+          <div className="aspect-[9/10] w-full rounded-2xl relative overflow-hidden bg-slate-100">
             <Image
               src={dog.imageUrl}
               alt={dog.name}
@@ -98,23 +98,23 @@ export default function DogCard({
 
           {/* 狗狗名字 */}
           <div className="p-5 flex-1">
-            <div className="flex justify-center items-center mb-4">
+            <div className="flex justify-center items-center">
               <h2 className="text-2xl font-bold text-slate-800">{dog.name}</h2>
             </div>
           </div>
 
           {/* 按鈕 */}
-          <div className="p-5 flex justify-center gap-12">
+          <div className="p-2 flex justify-center gap-12">
             <button
               onClick={() => fetchNewDog("left")}
-              className="w-25 h-15 flex items-center justify-center rounded-xl bg-stone-200 text-stone-400 active:scale-95"
+              className="w-25 h-15 flex items-center justify-center rounded-xl bg-red-500 text-white active:scale-95"
             >
               <X size={24} />
             </button>
 
             <button
               onClick={() => fetchNewDog("right")}
-              className="w-25 h-15 flex items-center justify-center rounded-xl bg-red-500 text-white active:scale-95"
+              className="w-25 h-15 flex items-center justify-center rounded-xl bg-green-500 text-white active:scale-95"
             >
               <Heart size={24} />
             </button>

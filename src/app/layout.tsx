@@ -1,3 +1,4 @@
+import Header from "@/components/Header"; // 導入 Header 組件
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -19,7 +20,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} antialiased`}>
+        <Header /> {/* 使用 Header 組件 */}
+        {children}
+        <footer className="text-center py-4 text-sm text-gray-500">
+          Made with ❤️ by small R
+        </footer>
+      </body>
     </html>
   );
 }

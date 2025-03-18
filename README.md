@@ -1,6 +1,8 @@
-# Dog-Hub 🐶
+# Dog-Hub 🐕
 
 **Dog-Hub** 是一個簡單有趣的網頁應用程式，讓使用者可以瀏覽隨機的狗狗圖片。通過滑動或點擊按鈕，你可以輕鬆切換到下一張狗狗圖片，享受與可愛狗狗互動的樂趣。
+
+Demo: [Dog-Hub Demo](https://dog-hub-tau.vercel.app/)
 
 ## 主要功能
 
@@ -20,16 +22,20 @@
 
 1. 克隆專案：
    ```bash
-   git clone https://github.com/your-username/dog-hub.git
+   git clone https://github.com/Ynoob87/dog-hub.git
    ```
-2. 安裝依賴：
+2. 進入專案目錄：
+   ```bash
+   cd dog-hub
+   ```
+3. 安裝依賴：
    ```bash
    npm install
    ```
-3. 啟動開發伺服器：
+4. 啟動開發伺服器：
    ```bash
    npm run dev
    ```
-4. 打開瀏覽器，訪問 `http://localhost:3000`。
+5. 打開瀏覽器，訪問 `http://localhost:3000`。
 
 希望你能享受使用 Dog-Hub 的樂趣！🐾
